@@ -67,12 +67,13 @@ To set up and run this project locally, you will need:
 
 The repository is organized into the following key directories:
 
+```
 FitZone/
 ├── .git/                  # Hidden folder: Contains all version control history and configs
 ├── Images/                # Contains all application visual assets (login.jpg, hiit.jpeg, etc.)
 ├── fitzone.sql            # The SQL script to create the database schema and tables
 └── (Source Code Files)/   # The main code base (Java, PHP, etc.) which connects to the database
-
+```
 
 ---
 
