@@ -1,0 +1,818 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+}
+
+.topbar {
+    background-color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbar a {
+    color: #444444;
+    text-decoration: none;
+    padding: 0 25px;
+    font-size: 14px;
+    margin: 0 2px;
+}
+
+.topbar i {
+    color: #ff0033; 
+    padding: 10px;
+}
+
+.navbar {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
+    white-space: nowrap;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%; 
+    max-width: 1200px; 
+    white-space: nowrap;
+}
+
+.logo {
+    margin-right: auto; 
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo img {
+    max-width: auto;
+    height: 100px;
+    transform: none;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    white-space: nowrap;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 2px;
+    white-space: nowrap;
+}
+
+.navbar button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    margin-left: 50px;
+    cursor: pointer;
+    transform: none;
+    white-space: nowrap;
+}
+
+.cover-image {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cover-image h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.8em;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+
+.cover-image p {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+
+.cover-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: medium;
+    height: 54px;
+    width: 189.45px;
+    transform: translate(-50%);
+}
+
+.cover-button:hover {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    background-color: black;
+    color: #9a9999;
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.Membership {
+    background-color: white;
+}
+
+.signup-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.signup-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.5;
+    filter: blur(1px);
+}
+
+.login-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.login-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.5;
+    filter: blur(1px);
+}
+
+.signup-form, .login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    height: auto;
+    width: 600px;
+    margin: auto auto;
+    text-align: center;
+}
+
+.signup-form h2, .login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.signup-form label, .login-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.signup-form input, .login-form input {
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    background-color: white;
+    color: #000000;
+}
+
+.signup-form button, .login-form button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+}
+
+.signup-form button:hover, .login-form button:hover {
+    background-color: white;
+    color: black;
+}
+
+.signup-form a, .login-form a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+
+.signup-form select, .login-form select {
+    width: 325px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+}
+
+.signup-form option, .login-form option {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    background-color: white;
+    color: #000000;
+    text-align: center;
+}
+
+.aboutus {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+.aboutus p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.aboutus h2 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.aboutus h4 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.services {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+    transition-duration: 0.4s;
+    display: inline-block;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.service-card:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.class {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+.class h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.class-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+    transition-duration: 0.4s;
+    display: inline-block;
+}
+
+.class-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.class-card:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.trainers {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+.trainers h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.trainer-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+    transition-duration: 0.4s;
+    display: inline-block;
+}
+
+.trainer-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.trainer-card h3 {
+    font-size: 20px;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.trainer-card p {
+    font-size: 16px;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.trainer-card:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.our-packages {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+.our-packages h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.package-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+    transition-duration: 0.4s;
+    display: inline-block;
+}
+
+.package-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.package-card h3 {
+    font-size: 20px;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.package-card p {
+    font-size: 16px;
+    color: #000000;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.package-card:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.package-card button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 25px 40px;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+}
+
+.package-button:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.package-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.package-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.package-card ul li::before {
+    margin-left: 3px;
+    font-size: 16px;
+    color: #000000;
+    content: "✓";
+}
+
+.package-card ul li {
+    font-size: 16px;
+    color: #000000;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.package-card ul li:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.blog {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+.blog h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.blog-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+    transition-duration: 0.4s;
+    display: inline-block;
+}
+
+.blog-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.blog-card h3 {
+    font-size: 20px;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.blog-card p {
+    font-size: 16px;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.blog-card a {
+    color: red;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.blog-card:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.blog-card:hover img {
+    filter: brightness(0.8);
+}
+
+.inquires {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+.inquires h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.inquires label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.inquires input {
+    width: 50%;
+    height: 25px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    color: #000000;
+    text-align: center;
+}
+
+.inquires textarea {
+    width: 50%;
+    height: 100px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    color: #000000;
+    text-align: center;
+}
+
+.inquires button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+}
+
+.inquires button:hover {
+    background-color: white;
+    color: black;
+}
+
+.contact {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;    
+}
+
+.contact h2 {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.contact-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+    transition-duration: 0.4s;
+    display: inline-block;
+}
+
+.contact-card i {
+    font-size: 30px;   
+}
+
+.contact a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.contact-card:hover {
+    transform: scale(1.05);
+}
+
+.signup-page-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.signup-page-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.5;
+    filter: blur(1px);
+}
+
+.signup-page-buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: auto;
+    width: 600px;
+    margin: auto auto;
+    text-align: center;
+}
+
+.signup-page-buttons button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 15px;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    display: inline-block;
+    width: 150px;
+}
+
+.signup-page-buttons button:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+
+    .topbar a {
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    .cover-image h1 {
+        font-size: 1.5em;
+    }
+
+    .cover-image p {
+        font-size: 1em;
+    }
+
+    .cover-button {
+        font-size: 14px;
+        padding: 8px 16px;
+        width: 80%;
+        max-width: 200px;
+    }
+
+    .service-card, .class-card, .trainer-card, .package-card, .blog-card, .contact-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .signup-form, .login-form {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .signup-form input, .login-form input, .inquires input, .inquires textarea {
+        width: 100%;
+    }
+
+    .main-nav {
+        align-items: center;
+    }
+
+    .main-nav a {
+        padding: 10px 0;
+    }
+
+    .package-card button {
+        margin: 10px 0;
+        width: 90%;
+    }
+}
